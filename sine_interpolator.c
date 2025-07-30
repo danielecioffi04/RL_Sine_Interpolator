@@ -55,7 +55,16 @@ int main(){
 
     printf("Inserire un angolo tra 0 e 359: ");
     scanf("%d", &x);
+    
+    unsigned int abs_result = calculateSine(transformX(x));
 
-    unsigned int result = calculateSine(transformX(x));
-    shownbits(result, 10);
+    // Se angolo tra 180 e 359, cambia segno con complemento a due
+    unsigned int final_result;
+    if(x >= 180 && x < 360){
+        final_result = (~abs_result + 1) & 0x3FF;  // Mantieni solo 10 bit
+    } else {
+        final_result = abs_result;
+    }
+
+    shownbits(final_result, 10);
 }
