@@ -50,11 +50,8 @@ unsigned int calculateSine(unsigned int x){
     return sine_pn + intermediate_result;
 }
 
-int main(){
-    unsigned int x;
-
-    printf("Inserire un angolo tra 0 e 359: ");
-    scanf("%d", &x);
+void sine_interpolator(int i){
+    unsigned int x = i;
     
     unsigned int abs_result = calculateSine(transformX(x));
 
@@ -67,4 +64,11 @@ int main(){
     }
 
     shownbits(final_result, 10);
+}
+
+int main(){
+    for(int i=0 ; i<361 ; i++){
+        printf("sin(%d): ", i);
+        sine_interpolator(i);
+    }
 }
