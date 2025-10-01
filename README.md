@@ -7,8 +7,6 @@ The implemented architecture uses:
 - A **look-up table (LUT)** storing sampled sine values.  
 - A **linear interpolation algorithm** to improve accuracy between stored points.  
 
-This approach achieves a balance between hardware efficiency and computational accuracy.
-
 ## Repository Structure
 - `relazione.pdf` → Complete report containing all project details, design choices, diagrams, and simulation results. (in italian)
 - (other project/simulation files, if any)
