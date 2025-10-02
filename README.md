@@ -9,7 +9,7 @@ The implemented architecture uses:
 
 ## Repository Structure
 - `relazione.pdf` → Complete report containing all project details, design choices, diagrams, and simulation results. (in italian)
-- (other project/simulation files, if any)
+- (other project/simulation files)
 
 ## Further Details
 For an in-depth explanation of the project phases, methodology, and results, please refer to **`relazione.pdf`** included in the repository.
